@@ -6,12 +6,12 @@ var neckHeight = 70;
 var easing = 0.04;
 
 function setup(){
- createCanvas(360,480);
+ createCanvas(1200,1200);
   strokeWeight(2);
   ellipseMode(RADIUS);
 }
 function draw(){
-  background("white");
+  background("blue");
   var targetX=mouseX;
   x=x+(targetX-x)* easing;
   
@@ -34,12 +34,12 @@ function draw(){
   line(x+12,neckY,x+78,neckY+15);
   
   noStroke();
-  fill("blacK");
+  fill("red");
   ellipse(x,y-33,33,33);
-  fill("black");
+  fill("red");
   rect(x-45,y-bodyHeight,90,bodyHeight-33);
   
-  fill("black");
+  fill("red");
   ellipse(x+12,neckY,radius,radius);
   fill("white");
   ellipse(x+24,neckY-16,14,14);
